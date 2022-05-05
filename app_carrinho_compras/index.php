@@ -13,7 +13,6 @@ $carrinho1->adicionarItem('Biscicleta', 750.10);
 $carrinho1->adicionarItem('Geladeira', 2050.16);
 $carrinho1->adicionarItem('Tapete', 50.12);
 
-echo 'Valor Total Recalculado'.$carrinho1->exibirValorTotal();
-
 echo "<br />";
+echo 'Valor Total Recalculado'.$carrinho1->exibirValorTotal();
 print_r($carrinho1->exibirItens());

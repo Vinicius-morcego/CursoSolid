@@ -21,7 +21,7 @@ class CarrinhoCompra{
    }
 
    public function adicionarItem(string $item, float $valor){
-       array_push($this->itens, ["item" -> $item, "valor" -> $valor]);
+    array_push($this->itens, [$item, $valor]);
        $this->valorTotal += $valor;
        return true;
    }
