@@ -1,0 +1,16 @@
+{
+    "name": "vinicius/app_carrinho_compras",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "Vinicius\\AppCarrinhoCompras\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Vinicius",
+            "email": "vinicius.templario@gmail.com"
+        }
+    ],
+    "require": {}
+}
