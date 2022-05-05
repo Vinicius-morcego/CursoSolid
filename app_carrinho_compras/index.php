@@ -4,4 +4,16 @@ require __DIR__."/vendor/autoload.php";
 
 use App\CarrinhoCompra;
 
-echo CarrinhoCompra::teste();
+$carrinho1 = new CarrinhoCompra();
+print_r($carrinho1->exibirItens());
+
+echo 'Valor Total'.$carrinho1->exibirValorTotal();
+
+$carrinho1->adicionarItem('Biscicleta', 750.10);
+$carrinho1->adicionarItem('Geladeira', 2050.16);
+$carrinho1->adicionarItem('Tapete', 50.12);
+
+echo 'Valor Total Recalculado'.$carrinho1->exibirValorTotal();
+
+echo "<br />";
+print_r($carrinho1->exibirItens());
