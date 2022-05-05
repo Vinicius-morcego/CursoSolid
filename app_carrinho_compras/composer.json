@@ -1,0 +1,17 @@
+{
+    "name": "vinicius/app_carrinho_compras",
+    "type": "project",    
+    "authors": [
+        {
+            "name": "Morcego",
+            "email": "vinicius.templario@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\":"src/"
+        }
+    }
+
+}
