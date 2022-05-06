@@ -2,7 +2,7 @@
 
 require __DIR__."/vendor/autoload.php";
 
-use App\CarrinhoCompra;
+use src\CarrinhoCompra;
 
 $carrinho1 = new CarrinhoCompra();
 

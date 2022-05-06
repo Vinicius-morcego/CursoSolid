@@ -2,10 +2,10 @@
 
 require __DIR__."/vendor/autoload.php";
 
-use App\CarrinhoCompra;
-use App\Item;
-use App\Pedido;
-use App\EmailService;
+use src\CarrinhoCompra;
+use src\Item;
+use src\Pedido;
+use src\EmailService;
 
 echo '<h3>Com SRP</h3>';
 
