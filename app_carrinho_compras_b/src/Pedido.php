@@ -2,6 +2,8 @@
 
 namespace src;
 
+use src\CarrinhoCompra;
+
 class Pedido{
     private $status;
     private $carrinhoCompra;

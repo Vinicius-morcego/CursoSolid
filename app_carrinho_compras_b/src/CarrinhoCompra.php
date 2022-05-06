@@ -1,6 +1,8 @@
 <?php
 
-namespace src\Item;
+namespace src;
+
+use src\Item;
 
 class CarrinhoCompra{
    //atributos
