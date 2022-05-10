@@ -1,5 +1,5 @@
 {
-    "name": "vinicius/app_carrinho_compras",
+    "name": "vinicius/app_carrinho_compras_b",
     "type": "project",    
     "authors": [
         {
@@ -10,7 +10,7 @@
     "require": {},
     "autoload": {
         "psr-4": {
-            "App\\":"src/"
+            "src/"
         }
     }
 
