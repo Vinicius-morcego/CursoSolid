@@ -11,6 +11,15 @@ class Item{
         $this -> valor = 0;
     }
 
+    public function itemValido(){
+        if($this->descricao == ""){
+            return false;
+        }
+        if($this->valor <= 0){
+            return false;
+        }
+        return true;
+    }
     public function getDescricao(){
         return $this->descricao;
     }

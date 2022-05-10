@@ -21,11 +21,54 @@ $item1->setValor(4.55);
 
 $item2->setDescricao('Copos');
 $item2->setValor(2.35);
+
+$pedido->getCarrinhoCompra()->adicionarItem($item1);
+$pedido->getCarrinhoCompra()->adicionarItem($item2);
 //----------------------------------
-echo'<h4>Pedidos</h4>';
+echo'<h4>Pedido com itens</h4>';
 echo'<pre>';
 print_r($pedido);
 echo'</pre>';
+//----------------------------------
+echo'<h4>Itens do carrinho</h4>';
+echo'<pre>';
+print_r($pedido->getCarrinhoCompra()->getItens());
+echo'</pre>';
+//----------------------------------
+echo'<h4>Total do pedido</h4>';
+$total = 0;
+foreach($pedido->getCarrinhoCompra()->getItens() as $key => $item){
+    
+    $total += $item->getValor();    
+
+}
+echo $total;
+//----------------------------------
+echo'<h4>Carrinho está valido?</h4>';
+echo'<pre>';
+echo $pedido->getCarrinhoCompra()->validarCarrinho();
+echo'</pre>';
+//----------------------------------
+echo'<h4>Status do pedido</h4>';
+echo'<pre>';
+echo $pedido->getStatus();
+echo'</pre>';
+//----------------------------------
+echo'<h4>Confirmar pedido</h4>';
+echo'<pre>';
+echo $pedido->confirmar();
+echo'</pre>';
+//----------------------------------
+echo'<h4>Status do pedido</h4>';
+echo'<pre>';
+echo $pedido->getStatus();
+echo'</pre>';
+//----------------------------------
+echo'<h4>E-mail</h4>';
+echo'<pre>';
+echo EmailService::dispararEmail();
+echo'</pre>';
+
 
 
 
