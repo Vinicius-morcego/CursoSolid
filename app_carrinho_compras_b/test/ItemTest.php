@@ -54,7 +54,7 @@ class ItemTest extends TestCase{
         $this->assertEquals(false, $item->itemValido());
 
         //Teste para validar o retorno false do método caso o valor seja 0
-        $item->setDescricao('Cadeira de plástico');
+        $item->setDescricao('Cadeira de plástico'); 
         $item->setValor(0);
 
         $this->assertEquals(false, $item->itemValido());
